@@ -17,10 +17,12 @@ public class swordScript : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("Fire1")){
-            anim.SetBool("swing", true);
+            anim.SetBool("isSwinging", true);
+            Debug.Log("Hello");
         }
         else{
-            anim.SetBool("swing", false);
+            anim.SetBool("isSwinging", false);
+            anim.SetBool("isIdle", true);
         }
     }
 }
